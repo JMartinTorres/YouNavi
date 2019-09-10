@@ -12,11 +12,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         // URL shared from YouTube app
         Bundle ytBundle = getIntent().getExtras();
-        String url = "";
+        String url;
 
         if (ytBundle != null) {
             url = ytBundle.getString(Intent.EXTRA_TEXT);
